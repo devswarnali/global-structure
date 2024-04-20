@@ -1,0 +1,547 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+    color: #ababab;
+    font-size: 16.5px;
+    line-height: 1.66em;
+    font-family: 'Lato', sans-serif, 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px 0px 20px ;
+    padding: 0px;
+    color: #dddee3;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration:underline;
+}
+
+h2{
+    font-size: 36px; 
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 28px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+h6{
+    font-size: 20px;
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span{
+    color: #ad6e6e;
+}
+
+p{
+    margin: 0px 0px 18px;
+    padding: 0px;
+}
+
+p span{
+    color: #ede8e8;
+}
+
+blockquote{
+    margin: 0px 0px 20px;
+    padding: 15px 22px;
+    background-color: #121212;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #aaaaaa;
+    transition: .4s ease-in-out;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px 13px;
+}
+
+li{
+    margin: 0px 7px;
+}
+
+.home-page{
+    padding: 80px 0px;
+}
+
+.black-bg-color{
+    background-color: #000000;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+.grey-bg-color{
+    background-color: #121212;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.primary-button{
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.primary-button:hover{
+    background-color: #1d1c1c;
+}
+
+.secondary-button{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+
+.secondary-button:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+.tertiary-button{
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+
+.tertiary-button:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #935353;
+}
+
+.contact-wrapper{
+    padding: 70px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.coloumn-3{
+    width: 33.3333%;
+    padding: 0px 15px;
+}
+
+.coloumn-4{
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.coloumn-6{
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.coloumn-12{
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.cont-padding{
+    padding: 0px 0px 80px;
+}
+
+label {
+    text-transform: capitalize;
+    font-size: 16.5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+}
+
+label span {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    width: 100%;
+    border: 1px solid #606060;
+    color: #aaaaaa;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 13px 9px;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+input[type="submit"]{
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 13px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    transition: .4s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    background-color: #1d1c1c;
+    color: #ffffff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaaaaa;
+    transition: all .3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label::after {
+    background-color: #000;
+    border: 1px solid #ffffff;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    z-index: 2;
+    width: 5px;
+    height: 13px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+input[type="checkbox"]:checked + label::before {
+    opacity: 1;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aaaaaa;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+input[type="radio"]:checked + label::after {
+    background-color: #000;
+    border: 1px solid #ffffff;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: 7.25px;
+    left: 8px;
+    z-index: 2;
+    width: 6px;
+    height: 6px;
+    border: solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+input[type="radio"]:checked + label::before {
+    opacity: 1;
+}
+
+.form-check{
+    margin-bottom: 30px;
+}
+
+@media (max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+
+    h1{
+        font-size: 33px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 27px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 21px;
+    }
+
+    h6{
+        font-size: 18px;
+    }
+
+    body{
+        font-size: 15px;
+    }
+
+    .home-page {
+        padding: 75px 0px;
+    }
+
+    .cont-padding{
+        padding: 0px 0px 75px;
+    }
+
+    .primary-button,
+    .secondary-button,
+    .tertiary-button {
+        padding: 13px 22px;
+    }
+
+    .contact-wrapper {
+        padding: 60px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea{
+        padding: 12px 9px;
+    }
+
+    textarea {
+        height: 130px;
+    }
+
+    input[type="checkbox"] + label::after,
+    input[type="radio"] + label::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    input[type="checkbox"] + label::before {
+        top: 2px;
+        left: 7px;
+    }
+
+    input[type="radio"] + label::before {
+        top: 5px;
+        left: 5px;
+    }
+
+    input[type="submit"] {
+        padding: 12px 46px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+
+    .home-page {
+        padding: 60px 0px;
+    }
+
+    .cont-padding{
+        padding: 0px 0px 60px;
+    }
+
+    .primary-button,
+    .secondary-button,
+    .tertiary-button {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+
+    .contact-wrapper {
+        padding: 50px;
+    }
+
+    .coloumn-6{
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea{
+        margin-bottom: 25px;
+    }
+
+    textarea {
+        height: 115px;
+    }
+
+    input[type="submit"] {
+        padding: 11px 43px;
+    }
+}
+
+@media (max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 31px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 22px;
+    }
+
+    h5{
+        font-size: 19px;
+    }
+
+    h6{
+        font-size: 17px;
+    }
+
+    .home-page {
+        padding: 45px 0px;
+    }
+
+    .cont-padding{
+        padding: 0px 0px 45px;
+    }
+
+    .primary-button,
+    .secondary-button,
+    .tertiary-button {
+        padding: 10px 20px;
+        margin: 0px 50px 15px 0px;
+    }
+
+    .contact-wrapper {
+        padding: 20px;
+    }
+
+    textarea {
+        height: 95px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 30px;
+    }
+}
